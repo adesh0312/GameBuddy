@@ -68,6 +68,33 @@ body {
     background-color: orange;
     transition: 0.15s ease-in-out;
 }
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #1f2833;
+    padding: 10px;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+  #check:checked ~ .menu {
+    display: flex;
+  }
+
+  .open-menu2,
+  .close-menu2 {
+    display: block;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+  }
+}
+
 .menu li a:hover:after {width: 100%;}
 .open-menu2 , .close-menu2 {
     position: absolute;
