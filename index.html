@@ -18,19 +18,16 @@
             </li>
           </ul>
 
-          <input type="checkbox" id="check">
-          <span class="menu">
-            <div class="menuimg">
-              <li><img src="1692022128501.png" alt=""></li>
-            </div>
-            <li><a href="index.html">HomePage</a></li>
-            <li><a href="aboutgbcoins.html">About GB Coins</a></li>
-            <li><a href="buddypass.html">BUDDY PASS</a></li>
-            <li><a href="weareus.html">We are US</a></li>
-            <li><a href="unwrap.html">UnWrap</a></li>
-            <label for="check" class="close-menu2"><i class="fa fa-times"></i></label>
-          </span>
-          <label for="check" class="open-menu2"><i class="fa fa-bars"></i></label>
+          <div class="sidebar" id="sidebar">
+  <a href="index.html">🏠 Home</a>
+  <a href="aboutgbcoins.html">💰 GB Coins</a>
+  <a href="buddypass.html">🎟️ Buddy Pass</a>
+  <a href="weareus.html">👥 We are US</a>
+  <a href="unwrap.html">🎁 UnWrap</a>
+  <a href="talktous.html">📞 Talk to US</a>
+  <button onclick="closeSidebar()">✖ Close</button>
+</div>
+<button class="sidebar-toggle" onclick="openSidebar()">☰</button>
 
           <img src="user_318-159711.jpg" alt="" class="user-pic" onclick="toggleMenu()">
 
